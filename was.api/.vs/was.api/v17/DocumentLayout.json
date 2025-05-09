@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\github\\was\\was.api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\models\\dtos\\dtoroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\models\\dtos\\dtoroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\middleware\\errorhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\middleware\\errorhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\models\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\models\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DtoRoles.cs",
+              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Models\\Dtos\\DtoRoles.cs",
+              "RelativeDocumentMoniker": "was.api\\Models\\Dtos\\DtoRoles.cs",
+              "ToolTip": "D:\\github\\was\\was.api\\was.api\\Models\\Dtos\\DtoRoles.cs",
+              "RelativeToolTip": "was.api\\Models\\Dtos\\DtoRoles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T12:26:45.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "was.api\\appsettings.Development.json",
+              "ToolTip": "D:\\github\\was\\was.api\\was.api\\appsettings.Development.json",
+              "RelativeToolTip": "was.api\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-09T07:08:32.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "was.api\\appsettings.Production.json",
+              "ToolTip": "D:\\github\\was\\was.api\\was.api\\appsettings.Production.json",
+              "RelativeToolTip": "was.api\\appsettings.Production.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-09T07:08:44.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "was.api\\Models\\AppDbContext.cs",
+              "ToolTip": "D:\\github\\was\\was.api\\was.api\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "was.api\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T12:00:24.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "was.api\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\github\\was\\was.api\\was.api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "was.api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAACkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T09:32:39.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Settings.cs",
+              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Models\\Settings.cs",
+              "RelativeDocumentMoniker": "was.api\\Models\\Settings.cs",
+              "ToolTip": "D:\\github\\was\\was.api\\was.api\\Models\\Settings.cs",
+              "RelativeToolTip": "was.api\\Models\\Settings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T07:31:16.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ErrorHandlingMiddleware.cs",
+              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Middleware\\ErrorHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "was.api\\Middleware\\ErrorHandlingMiddleware.cs",
+              "ToolTip": "D:\\github\\was\\was.api\\was.api\\Middleware\\ErrorHandlingMiddleware.cs",
+              "RelativeToolTip": "was.api\\Middleware\\ErrorHandlingMiddleware.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T11:43:21.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Program.cs",
+              "RelativeDocumentMoniker": "was.api\\Program.cs",
+              "ToolTip": "D:\\github\\was\\was.api\\was.api\\Program.cs",
+              "RelativeToolTip": "was.api\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAB4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T07:11:46.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "was.api\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\github\\was\\was.api\\was.api\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "was.api\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T07:38:57.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "was.api\\WeatherForecast.cs",
+              "ToolTip": "D:\\github\\was\\was.api\\was.api\\WeatherForecast.cs",
+              "RelativeToolTip": "was.api\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T09:47:22.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\appsettings.json",
+              "RelativeDocumentMoniker": "was.api\\appsettings.json",
+              "ToolTip": "D:\\github\\was\\was.api\\was.api\\appsettings.json",
+              "RelativeToolTip": "was.api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-09T07:08:27.799Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
