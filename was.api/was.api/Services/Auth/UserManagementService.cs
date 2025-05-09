@@ -29,6 +29,7 @@ namespace was.api.Services.Auth
                 var res = new LoginResponse();
                 // get user from db
                 var user = new User();
+                user.Password = "test";
 
                 var hassgedPassword = _auth.GetPasswordHash(request.Password);
                 if(_auth.VerifyPassword(hassgedPassword, user.Password))

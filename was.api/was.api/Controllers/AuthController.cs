@@ -53,17 +53,7 @@ namespace was.api.Controllers
                     return Ok("Inavlid username/password.");
                 }
                 return Ok(result);
-
-                var user = new User { Email = "pss@gmail.com", FirstName = "Prashant", LastName = "Singh", RoleName = "Admin" };
-                var (acessToken, refreshToken) = GenerateToken(user);
-                var response = new LoginResponse
-                {
-                    AccessToken = acessToken,
-                    RefreshToken = refreshToken,
-                    UserDetails = user
-                };
-
-                return Ok(response);
+                
             }
             catch (Exception ex)
             {

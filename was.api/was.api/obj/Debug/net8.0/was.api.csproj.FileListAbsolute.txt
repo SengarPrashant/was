@@ -154,3 +154,4 @@ D:\github\was\was.api\was.api\obj\Debug\net8.0\refint\was.api.dll
 D:\github\was\was.api\was.api\obj\Debug\net8.0\was.api.pdb
 D:\github\was\was.api\was.api\obj\Debug\net8.0\was.api.genruntimeconfig.cache
 D:\github\was\was.api\was.api\obj\Debug\net8.0\ref\was.api.dll
+D:\github\was\was.api\was.api\obj\Debug\net8.0\was.api.sourcelink.json

@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "D:\\github\\was\\was.api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\models\\dtos\\dtoroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\models\\dtos\\dtoroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\services\\auth\\usermanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\services\\auth\\usermanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,14 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\middleware\\errorhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,67 +47,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DtoRoles.cs",
-              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Models\\Dtos\\DtoRoles.cs",
-              "RelativeDocumentMoniker": "was.api\\Models\\Dtos\\DtoRoles.cs",
-              "ToolTip": "D:\\github\\was\\was.api\\was.api\\Models\\Dtos\\DtoRoles.cs",
-              "RelativeToolTip": "was.api\\Models\\Dtos\\DtoRoles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAoAAAAAAAAAA==",
+              "Title": "UserManagementService.cs",
+              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Services\\Auth\\UserManagementService.cs",
+              "RelativeDocumentMoniker": "was.api\\Services\\Auth\\UserManagementService.cs",
+              "ToolTip": "D:\\github\\was\\was.api\\was.api\\Services\\Auth\\UserManagementService.cs",
+              "RelativeToolTip": "was.api\\Services\\Auth\\UserManagementService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIAwwB8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T12:26:45.116Z",
+              "WhenOpened": "2025-05-09T19:19:11.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "was.api\\appsettings.Development.json",
-              "ToolTip": "D:\\github\\was\\was.api\\was.api\\appsettings.Development.json",
-              "RelativeToolTip": "was.api\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-09T07:08:32.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.Production.json",
-              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\appsettings.Production.json",
-              "RelativeDocumentMoniker": "was.api\\appsettings.Production.json",
-              "ToolTip": "D:\\github\\was\\was.api\\was.api\\appsettings.Production.json",
-              "RelativeToolTip": "was.api\\appsettings.Production.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-09T07:08:44.839Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Models\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "was.api\\Models\\AppDbContext.cs",
-              "ToolTip": "D:\\github\\was\\was.api\\was.api\\Models\\AppDbContext.cs",
-              "RelativeToolTip": "was.api\\Models\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T12:00:24.58Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "was.api\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\github\\was\\was.api\\was.api\\Controllers\\AuthController.cs",
               "RelativeToolTip": "was.api\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAACkAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAADEAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T09:32:39.026Z"
+              "WhenOpened": "2025-05-09T09:32:39.026Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "Settings.cs",
               "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Models\\Settings.cs",
               "RelativeDocumentMoniker": "was.api\\Models\\Settings.cs",
@@ -131,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "ErrorHandlingMiddleware.cs",
               "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Middleware\\ErrorHandlingMiddleware.cs",
               "RelativeDocumentMoniker": "was.api\\Middleware\\ErrorHandlingMiddleware.cs",
@@ -143,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Program.cs",
               "RelativeDocumentMoniker": "was.api\\Program.cs",
@@ -155,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "was.api\\Controllers\\WeatherForecastController.cs",
@@ -167,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "was.api\\WeatherForecast.cs",
@@ -179,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\appsettings.json",
               "RelativeDocumentMoniker": "was.api\\appsettings.json",
