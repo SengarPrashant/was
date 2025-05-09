@@ -64,7 +64,7 @@
               "RelativeDocumentMoniker": "was.api\\Models\\Dtos\\DtoRoles.cs",
               "ToolTip": "D:\\github\\was\\was.api\\was.api\\Models\\Dtos\\DtoRoles.cs",
               "RelativeToolTip": "was.api\\Models\\Dtos\\DtoRoles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T12:26:45.116Z",
               "EditorCaption": ""
@@ -115,8 +115,7 @@
               "RelativeToolTip": "was.api\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAAACkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T09:32:39.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-09T09:32:39.026Z"
             },
             {
               "$type": "Document",
