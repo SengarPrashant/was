@@ -10,3 +10,8 @@ was.api/.vs/was.api/v17/.suo
 /was.api/was.api/bin
 /was.api/was.api/bin/Debug
 /was.api/was.api/obj
+/was.api/was.api/obj
+/was.api/was.api/bin
+*.exe
+*.dll
+/was.api/was.api/obj

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\github\\was\\was.api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\services\\auth\\usermanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\services\\auth\\usermanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\services\\auth\\usermanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|solutionrelative:was.api\\services\\auth\\usermanagementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BBA255E2-A55D-426E-AD43-02769D5B9768}|was.api\\was.api.csproj|d:\\github\\was\\was.api\\was.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,30 +42,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserManagementService.cs",
               "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Services\\Auth\\UserManagementService.cs",
               "RelativeDocumentMoniker": "was.api\\Services\\Auth\\UserManagementService.cs",
               "ToolTip": "D:\\github\\was\\was.api\\was.api\\Services\\Auth\\UserManagementService.cs",
               "RelativeToolTip": "was.api\\Services\\Auth\\UserManagementService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIAwwB8AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAADkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T19:19:11.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\github\\was\\was.api\\was.api\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "was.api\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\github\\was\\was.api\\was.api\\Controllers\\AuthController.cs",
               "RelativeToolTip": "was.api\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAADEAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAADcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-09T09:32:39.026Z",
               "EditorCaption": ""
