@@ -15,3 +15,15 @@ was.api/.vs/was.api/v17/.suo
 *.exe
 *.dll
 /was.api/was.api/obj
+/was.api/.vs/was.api/v17/.suo
+/was.api/was.api/bin/Debug/net8.0/was.api.dll
+/was.api/was.api/bin/Debug/net8.0/was.api.exe
+/was.api/was.api/bin/Debug/net8.0/was.api.pdb
+/was.api/was.api/obj/Debug/net8.0/apphost.exe
+/was.api/was.api/obj/Debug/net8.0/ref/was.api.dll
+/was.api/was.api/obj/Debug/net8.0/refint/was.api.dll
+/was.api/was.api/obj/Debug/net8.0/was.api.dll
+/was.api/was.api/obj/Debug/net8.0/was.api.pdb
+/was.api/was.api/obj/Debug/net8.0/was.api.AssemblyInfo.cs
+/was.api/was.api/obj/Debug/net8.0/was.api.AssemblyInfoInputs.cache
+/was.api/.vs/was.api/v17/DocumentLayout.json
