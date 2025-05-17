@@ -9,6 +9,7 @@ using System.Text;
 using was.api.Middleware;
 using Microsoft.EntityFrameworkCore;
 using was.api.Services.Auth;
+using was.api.Services.Forms;
 
 
 // Add services to the container.
@@ -27,6 +28,7 @@ try
 
     builder.Services.Configure<Settings>(builder.Configuration);
 
+    builder.Services.AddHttpContextAccessor();
     builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
@@ -36,7 +38,9 @@ try
     // services start
 
     builder.Services.AddScoped<IAuthService, AuthService>();
+    builder.Services.AddScoped<IUserContextService, UserContextService>();
     builder.Services.AddScoped<IUserManagementService, UserManagementService>();
+    builder.Services.AddScoped<IFormsService, FormsService>();
 
     // services end
 

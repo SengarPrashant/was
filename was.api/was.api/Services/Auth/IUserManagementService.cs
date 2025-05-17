@@ -5,6 +5,7 @@ namespace was.api.Services.Auth
     public interface IUserManagementService
     {
         public Task<LoginResponse?> AuthenticateUser(LoginRequest request);
-        public Task<NewUserRequest> CreateNewUser(NewUserRequest user);
+        public Task<bool> ChangePassword(ChangePasswordRequest request);
+        public Task<User> CreateUser(User user);
     }
 }

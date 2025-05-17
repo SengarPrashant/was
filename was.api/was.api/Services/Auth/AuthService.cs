@@ -17,15 +17,16 @@ namespace was.api.Services.Auth
         private AppDbContext _db = dbContext;
         private ILogger<AuthService> _logger= logger;
         private readonly Settings _settings = options.Value;
+        private static readonly object _dummy = new();
 
         public string GetPasswordHash(string password) {
             var passwordHasher = new PasswordHasher<object>();
-            return passwordHasher.HashPassword(null, password);
+            return passwordHasher.HashPassword(_dummy, password);
         }
         public bool VerifyPassword(string passwordHash, string password)
         {
             var passwordHasher = new PasswordHasher<object>();
-            var result = passwordHasher.VerifyHashedPassword(null, passwordHash, password);
+            var result = passwordHasher.VerifyHashedPassword(_dummy, passwordHash, password);
             return result == PasswordVerificationResult.Success;
         }
         public (string, string) GenerateToken(User user)
@@ -35,11 +36,13 @@ namespace was.api.Services.Auth
             var tokenKey = Encoding.UTF8.GetBytes(_settings.Jwt.SecretKey);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                new Claim(ClaimTypes.Name, $"{user.FirstName} {user.LastName}"),
-                new Claim(ClaimTypes.Role, user.RoleName) // For role-based auth
-                }),
+                Subject = new ClaimsIdentity([
+                    new Claim(ClaimTypes.Email, user.Email),
+                    new Claim(ClaimTypes.SerialNumber, user.Id.ToString()),
+                    new Claim(ClaimTypes.Surname, user.LastName),
+                    new Claim(ClaimTypes.Name, user.FirstName),
+                    new Claim(ClaimTypes.Role, user.RoleName) // For role-based auth
+                ]),
                 Expires = now.AddHours(12),
                 Issuer = _settings.Jwt.Issuer,
                 Audience = _settings.Jwt.Audience,
@@ -56,7 +59,7 @@ namespace was.api.Services.Auth
 
         public async Task<bool> SaveRefreshToken(int id, string refresToken)
         {
-            var user = await _db.Users.Where(x => x.Id == id).FirstOrDefaultAsync();
+            var user = await _db.Users.FirstOrDefaultAsync(x => x.Id == id);
             if(user is not null)
             {
                 user.RefreshToken = refresToken;
