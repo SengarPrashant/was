@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using was.api.Models;
+using was.api.Services.Auth;
 
 namespace was.api.Controllers
 {
@@ -18,11 +19,13 @@ namespace was.api.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly Settings _settings;
+        private readonly IUserContextService _userContextService;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IOptions<Settings> options)
+        public WeatherForecastController(IUserContextService contextService, ILogger<WeatherForecastController> logger, IOptions<Settings> options)
         {
             _logger = logger;
             _settings = options.Value;
+            _userContextService = contextService;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
@@ -32,11 +35,13 @@ namespace was.api.Controllers
             _logger.LogWarning("Testing warning");
             _logger.LogDebug("Testing debug");
             _logger.LogInformation("Testing info");
+            var user = _userContextService.User;
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)],
+                
             })
             .ToArray();
         }

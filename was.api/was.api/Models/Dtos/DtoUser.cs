@@ -16,11 +16,11 @@ namespace was.api.Models.Dtos
         [Column("password")]
         public string Password { get; set; }
         [Column("password_otp")]
-        public string PasswordOtp { get; set; }
+        public string? PasswordOtp { get; set; }
         [Column("refresh_token")]
-        public string RefreshToken { get; set; }
+        public string? RefreshToken { get; set; }
         [Column("role_id")]
-        public string RoleId { get; set; }
+        public int RoleId { get; set; }
 
         [Column("active_status")]
         /// <summary>

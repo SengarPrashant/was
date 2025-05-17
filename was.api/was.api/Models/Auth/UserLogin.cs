@@ -14,9 +14,10 @@
 
     public class ChangePasswordRequest
     {
-        public string UserName { get; set; }
-        public string Password { get; set; }
-        public string ConfirmPassword { get; set; }
+        public int Id { get; set; }
+        public string Email { get; set; }
+        public string OldPassword { get; set; }
+        public string NewPassword { get; set; }
     }
     public class ResetPasswordRequest
     {
@@ -30,13 +31,23 @@
         public string LastName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public string PasswordOtp { get; set; }
-        public string RefreshToken { get; set; }
-        public string RoleId { get; set; }
-        public string RoleName { get; set; }
+        public string PasswordOtp { get; set; } = string.Empty;
+        public string RefreshToken { get; set; } = string.Empty;
+        public int RoleId { get; set; }
+        public string RoleName { get; set; } = string.Empty;
         /// <summary>
         /// 0:Deleted, 1:Active, 2:Deactivated, 3:Locked
         /// </summary>
         public int ActiveStatus { get; set; }
+    }
+
+    public class CurrentUser
+    {
+        public int Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Email { get; set; }
+        public string Role { get; set; }
+        public string IpAddress { get; set; }
     }
 }

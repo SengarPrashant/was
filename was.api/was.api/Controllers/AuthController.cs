@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -10,17 +8,17 @@ using was.api.Models;
 using was.api.Models.Auth;
 using was.api.Services.Auth;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace was.api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AuthController(ILogger<AuthController> logger, IOptions<Settings> options, IUserManagementService userManagementService) : ControllerBase
+    public class AuthController(ILogger<AuthController> logger, IOptions<Settings> options, 
+        IUserManagementService userManagementService, IUserContextService userContext) : ControllerBase
     {
         private readonly ILogger<AuthController> _logger = logger;
         private readonly Settings _settings = options.Value;
         private readonly IUserManagementService _userService = userManagementService;
+        private readonly IUserContextService _userContext = userContext;
 
         //// GET: api/<AuthController>
         //[HttpGet]
@@ -101,7 +99,7 @@ namespace was.api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error while processing ChangePassword: {request.UserName}", ex);
+                _logger.LogError($"Error while processing ChangePassword: {request.Email}", ex);
                 return StatusCode(500, "Something went wrong on the server.");
             }
         }
