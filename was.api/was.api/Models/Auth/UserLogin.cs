@@ -1,8 +1,10 @@
-﻿namespace was.api.Models.Auth
+﻿
+
+namespace was.api.Models.Auth
 {
     public class LoginRequest
     {
-        public string UserName { get; set; }
+        public string email { get; set; }
         public string Password { get; set; }
     }
     public class LoginResponse
@@ -21,15 +23,18 @@
     }
     public class ResetPasswordRequest
     {
-        public string UserName { get; set; }
-        public string Otp { get; set; }
+        public string email { get; set; }
+        public string? Otp { get; set; }
+        public string? Password { get; set; }
     }
     public class User
     {
         public int Id { get; set; }
+        public string EmployeeId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
+        public string? Mobile { get; set; }
         public string Password { get; set; }
         public string PasswordOtp { get; set; } = string.Empty;
         public string RefreshToken { get; set; } = string.Empty;
@@ -39,6 +44,8 @@
         /// 0:Deleted, 1:Active, 2:Deactivated, 3:Locked
         /// </summary>
         public int ActiveStatus { get; set; }
+        public string? StatusName { get; set; }
+        public DateTime CreatedAt { get; set; }
     }
 
     public class CurrentUser

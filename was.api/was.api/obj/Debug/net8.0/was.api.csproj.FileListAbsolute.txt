@@ -141,12 +141,6 @@ D:\github\was\was.api\was.api\obj\Debug\net8.0\scopedcss\bundle\was.api.styles.c
 D:\github\was\was.api\was.api\obj\Debug\net8.0\staticwebassets.build.json
 D:\github\was\was.api\was.api\obj\Debug\net8.0\staticwebassets.development.json
 D:\github\was\was.api\was.api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\github\was\was.api\was.api\obj\Debug\net8.0\staticwebassets\msbuild.was.api.Microsoft.AspNetCore.StaticWebAssets.props
-D:\github\was\was.api\was.api\obj\Debug\net8.0\staticwebassets\msbuild.was.api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\github\was\was.api\was.api\obj\Debug\net8.0\staticwebassets\msbuild.build.was.api.props
-D:\github\was\was.api\was.api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.was.api.props
-D:\github\was\was.api\was.api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.was.api.props
-D:\github\was\was.api\was.api\obj\Debug\net8.0\staticwebassets.pack.json
 D:\github\was\was.api\was.api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\github\was\was.api\was.api\obj\Debug\net8.0\was.api.csproj.Up2Date
 D:\github\was\was.api\was.api\obj\Debug\net8.0\was.api.dll
@@ -155,3 +149,13 @@ D:\github\was\was.api\was.api\obj\Debug\net8.0\was.api.pdb
 D:\github\was\was.api\was.api\obj\Debug\net8.0\was.api.genruntimeconfig.cache
 D:\github\was\was.api\was.api\obj\Debug\net8.0\ref\was.api.dll
 D:\github\was\was.api\was.api\obj\Debug\net8.0\was.api.sourcelink.json
+D:\github\was\was.api\was.api\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\github\was\was.api\was.api\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\github\was\was.api\was.api\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\github\was\was.api\was.api\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\github\was\was.api\was.api\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\github\was\was.api\was.api\bin\Debug\net8.0\EmailTemplates\EHS_to_AM_Reminder.html
+D:\github\was\was.api\was.api\bin\Debug\net8.0\EmailTemplates\L1_FM_to_AM.html
+D:\github\was\was.api\was.api\bin\Debug\net8.0\EmailTemplates\L2_AM_to_EHS.html
+D:\github\was\was.api\was.api\bin\Debug\net8.0\EmailTemplates\L3_EHS_to_FM.html
+D:\github\was\was.api\was.api\bin\Debug\net8.0\EmailTemplates\L4_FM_to_EHS.html

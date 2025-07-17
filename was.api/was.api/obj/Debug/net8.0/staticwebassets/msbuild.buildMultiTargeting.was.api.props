@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\was.api.props" />
-</Project>
