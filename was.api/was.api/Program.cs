@@ -1,8 +1,5 @@
 using Serilog;
-using System.Runtime.InteropServices;
-using System;
 using was.api.Models;
-using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;

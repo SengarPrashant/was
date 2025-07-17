@@ -1,24 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 using was.api.Models;
 using was.api.Models.Auth;
 using was.api.Services.Auth;
 
 namespace was.api.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AuthController(ILogger<AuthController> logger, IOptions<Settings> options, 
-        IUserManagementService userManagementService, IUserContextService userContext) : ControllerBase
+        IUserManagementService userManagementService, IAuthService authService, IUserContextService userContext) : ControllerBase
     {
         private readonly ILogger<AuthController> _logger = logger;
         private readonly Settings _settings = options.Value;
         private readonly IUserManagementService _userService = userManagementService;
         private readonly IUserContextService _userContext = userContext;
+        private readonly IAuthService _authService= authService;
 
         //// GET: api/<AuthController>
         //[HttpGet]
@@ -35,15 +34,13 @@ namespace was.api.Controllers
         //}
 
         // POST api/<AuthController>
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] LoginRequest request)
         {
-            // var u = await _db.Roles.ToListAsync();
-            // return Ok(u);
-
             try
             {
-                _logger.LogInformation($"Received login request for user: {request.UserName}");
+                _logger.LogInformation($"Received login request for user: {request.email}");
 
                 var result = await _userService.AuthenticateUser(request);
 
@@ -55,28 +52,22 @@ namespace was.api.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error while processing login for user: {request.UserName}", ex);
+                _logger.LogError($"Error while processing login for user: {request.email}", ex);
                 return StatusCode(500, "Something went wrong on the server.");
             }
-           
         }
 
+        [AllowAnonymous]
         [HttpPost("refresh")]
         public async Task<IActionResult> RefreshToken([FromBody] RefreshTokenRequest request)
         {
             try
             {
-                // Get the user by the refresh token
-                //var user = await _userManager.Users
-                //    .FirstOrDefaultAsync(u => u.RefreshToken == request.RefreshToken && u.RefreshTokenExpiration > DateTime.UtcNow);
-                var user = new User { Email = "pss@gmail.com", FirstName = "Prashant", LastName = "Singh", RoleName = "Admin" };
-                if (user == null)
-                {
-                    return Unauthorized("Invalid refresh token.");
-                }
+                var (accessToken, refreshToken) = await _authService.RefreshToken(request);
 
-                // Generate new JWT and refresh token
-                var (accessToken, refreshToken) = GenerateToken(user);
+                if (accessToken == null || refreshToken == null) { 
+                    return Unauthorized("Invalid token!");
+                }
 
                 return Ok(new { accessToken, refreshToken });
             }
@@ -93,9 +84,12 @@ namespace was.api.Controllers
         {
             try
             {
-                // logic
-                var user = new User { Email = "pss@gmail.com", FirstName = "Prashant", LastName = "Singh", RoleName = "Admin" };
-                return Ok("Success");
+                request.Email = _userContext.User.Email;
+                request.Id = _userContext.User.Id;
+                var updated = await _authService.ChangePassword(request);
+                if (updated) return Ok("Password updated. Please relogin");
+                
+                return Unauthorized("Invalid user!");
             }
             catch (Exception ex)
             {
@@ -104,18 +98,37 @@ namespace was.api.Controllers
             }
         }
 
+        [AllowAnonymous]
+        [HttpPost("getOtp")]
+        public async Task<IActionResult> GetOtp([FromBody] ResetPasswordRequest request)
+        {
+            try
+            {
+                var otpGenerated = await _authService.GenerateOtp(request);
+                if (!otpGenerated) return BadRequest("Invalid user!");
+
+                return Ok("OTP sent to email!");
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error while processing GetOtp: {request.email}", ex);
+                return StatusCode(500, "Something went wrong on the server.");
+            }
+        }
+        [AllowAnonymous]
         [HttpPost("resetPassword")]
         public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordRequest request)
         {
             try
             {
-                // logic
-                var user = new User { Email = "pss@gmail.com", FirstName = "Prashant", LastName = "Singh", RoleName = "Admin" };
-                return Ok("Success");
+                var resetSucces = await _authService.ValidateOtpAndResetPassword(request);
+                if (!resetSucces) return Unauthorized("Invalid user details!");
+                return Ok("Password updated successfully!");
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error while processing ResetPassword: {request.UserName}", ex);
+                _logger.LogError($"Error while processing ResetPassword: {request.email}", ex);
                 return StatusCode(500, "Something went wrong on the server.");
             }
         }
@@ -132,31 +145,7 @@ namespace was.api.Controllers
         //{
         //}
 
-        private (string, string) GenerateToken(User user)
-        {
-            var now = DateTime.UtcNow;
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var tokenKey = Encoding.UTF8.GetBytes(_settings.Jwt.SecretKey);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                new Claim(ClaimTypes.Name, "test user"),
-                new Claim(ClaimTypes.Role, "admin") // For role-based auth
-                }),
-                Expires = now.AddHours(12),
-                Issuer = _settings.Jwt.Issuer,
-                Audience = _settings.Jwt.Audience,
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(tokenKey), SecurityAlgorithms.HmacSha256Signature)
-            };
-            var atoken = tokenHandler.CreateToken(tokenDescriptor);
-            var accessToken = tokenHandler.WriteToken(atoken);
-
-            tokenDescriptor.Expires = now.AddDays(7);
-            var rtoken = tokenHandler.CreateToken(tokenDescriptor);
-            var refreshToken = tokenHandler.WriteToken(rtoken);
-            return (accessToken, refreshToken);
-        }
+       
 
     }
 }
